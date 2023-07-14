@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario </title>
+    <link rel="stylesheet" href="styleformulario.css">
+</head>
+<body>
+    <h1>Preencha o formulario</h1>
+    <form action="{% url 'formulario' %}" method="POST"> {% csrf_token %}  <!--action serve para onde ira ser enviado os dados-->
+        <p><label for="inome">Nome:</label> <!--label cria uma ligação entre o campo"name" e a caixa de selecao-->
+            <input type="text"name="name" id="inome"></p> <!-- seleciona id para interligar-->
+
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        
+        <p><input type="submit"value="Enviar"></p>
+
+    </form>
+</body>
+</html>

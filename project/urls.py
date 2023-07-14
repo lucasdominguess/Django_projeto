@@ -25,5 +25,6 @@ urlpatterns = [        #anhinando urls com include.
     path('admin/', admin.site.urls), 
     path ('home', include ('home.urls')), #puxando a urls de homeApp
     path('blog', include ('blog.urls')), #nao necessario colocar a barra
+   # path ('blog2',include ('blog.urls')), #nao é necessario colocar segunda pagina se a primeiro caminho ja estiver incluso
     
 ]

@@ -1,0 +1,4 @@
+{% extends 'selecionar arquivo' %} entender configuraçoes da pasta base
+{% include 'selecionar caminho' %} incluir trecho de cod pronto 
+{% load static %} usar no arquivo desejado 
+carrega o caminho da pasta static , ou qualquer pasta q seja configuração fixa ou padrao do projeto

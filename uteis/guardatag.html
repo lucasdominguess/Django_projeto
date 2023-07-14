@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>{% block title %}Onde ira o titulo{% endblock title %}  </title>
+
+    {% block head %}Onde ira o conteudo do head {% endblock head %}
+</head>
+<style>
+    h1 {
+        color: red ;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+        font-size: large 20px;
+        }
+    body {
+        background-color: darkslategrey;
+    }
+            
+    h2 {
+        color: brown
+    }
+    p {
+        color: chartreuse;
+    }
+    body
+</style>
+
+<body>
+
+<h1>{% block textoH1 %}TEXTO H1 {% endblock textoH1 %}</h1>
+
+<h2> {% block textoH2 %}TEXTO H2 {% endblock textoH2 %} </h2>
+
+<h3>{% block textoH3  %}TEXTO H3 {% endblock textoH3 %}</h3>
+
+<p> {% block paragrafo%}TEXTO PARAGRAFO {% endblock paragrafo %}</p> 
+
+{% block body %}Onde ira o conteudo do body {% endblock body %}
+</body>
+
+
+</html> 

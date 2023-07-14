@@ -56,7 +56,9 @@ ROOT_URLCONF = 'project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR /'base' #pasta base é parte do caminho ela nao é inclusa . nao e necessario digita-la como caminho 
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
