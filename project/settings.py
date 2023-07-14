@@ -57,7 +57,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR /'base' #pasta base é parte do caminho ela nao é inclusa . nao e necessario digita-la como caminho 
+            BASE_DIR / 'base' #pasta base é parte do caminho ela nao é inclusa . nao e necessario digita-la como caminho 
         ],
         'APP_DIRS': True,
         'OPTIONS': {

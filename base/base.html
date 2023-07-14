@@ -1,3 +1,5 @@
+{% comment %} {% extender "base" %}  {% endcomment %}
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>{% block title %}Onde ira o titulo{% endblock title %}  </title>
+{% comment %} 
+    {% block head %}Onde ira o conteudo do head {% endblock head %} {% endcomment %}
 
-    {% block head %}Onde ira o conteudo do head {% endblock head %}
-
-</head>
+{% comment %} </head>
 <style> 
     head { 
         color: rgb(0, 2, 3);
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
         font-size: large 30px;
-        background-color: rgb(3, 36, 34);
+        background-color: chartreuse;
         
 
     }
@@ -52,4 +54,4 @@
 </body>
 
 
-</html>
+</html> {% endcomment %}
